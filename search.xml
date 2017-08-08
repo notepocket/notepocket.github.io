@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[js字符串操作]]></title>
+    <url>%2F2017%2F08%2F08%2Fjs%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[1.去掉空格 var txt=$.trim($(“txt1”).val()); 2.转为数字 txtNum=Number($.trim(txt)) + 1; var thisEle = $(“#para”).css(“font-size”); //获取字体大小 var textFontSize = parseFloat(thisEle , 10); 3.四舍五入为整数/随机数 Math.ceil() ceil() 方法可对一个数进行上舍入。 参数必须是一个数值。返回值大于等于 x，并且与它最接近的整数。 Math.floor() floor() 方法可对一个数进行下舍入。 参数可以是任意数值或表达式。返回值小于等于 x，且与 x 最接近的整数。 Math.round() round() 方法可把一个数字舍入为最接近的整数 参数必须是一个数值。返回值与 x 最接近的整数。 Math.ceil(4.8992303) 输出结果：5 Math.floor(4.8992303) 输出结果：4 Math.round(4.8992303) 输出结果：5 Math.ceil(4.29993354) 输出结果：5 Math.floor(4.29993354) 输出结果：4 Math.round(4.29993354) 输出结果：4 Math.round(Math.random()*100); //产生0-100的随机数 4.截取字符串 var txt=$(“p”).text().substr(0,15);//截取从首个字符开始的15个字符 5.字符串替换 $(“image”).attr(“src”).replace(“size=60”, “size=200”); //用法replace(要替换的目标，替换后新值) 配合正则替换 如: $(“#txt”).replace(/[^\d-]/g, “”).replace(/^-/g, “”); 6.分割字符串 var str=new String(); var arr=new Array(); str=”百度,农夫it站,谷歌,竹林风,nongfuit.com,网页交流群,180550045欢迎加入”; arr=str.split(‘,’);//注split可以用字符或字符串分割 //alert(str.split(‘,’)[1]); for(var i=0;i&lt;arr.length;i++) { alter(arr[i]); } 7.js与jquery对象互相转换 var aa = $(“#mm”).get(0); // jquery 对象转成 js 对象 var bb = $(aa); //js 对象转成 jquery 对象 8.使用正则匹配 var matchTel = /^(([0+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/; if (!matchTel.test($(“#txtTel”).val())) { alert(“电话格式错误！”); return !1; }]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+</search>
